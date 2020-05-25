@@ -81,9 +81,9 @@ rm "$rand".txt
 now=$(date +"%I:%M %p | %Y-%m-%d")
 dateHash=$(date | cksum | tr -d ' ')
 blob="<section class=\"thought\"><div class=\"thought-date\"><a class=\"thought-date\" id=\"$dateHash\" href=\"#$dateHash\">
-$now</a></div>
+$now</a></div><div class=\"thought\">
 $thought
-</section>
+</div></section>
 "
 git pull
 echo "$blob" | cat - .rawthoughts.html > "$dateHash".html && mv "$dateHash".html .rawthoughts.html
