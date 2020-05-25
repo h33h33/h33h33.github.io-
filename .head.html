@@ -8,11 +8,12 @@
 <style>
 
 @import url("https://fonts.xz.style/serve/liberation-sans.css");
+@import url("https://fonts.xz.style/serve/liberation-mono.css");
 
 html {
-  padding: 10px;
   font-family: 'Liberation Sans', Arial, sans-serif;
   font-size: 16px;
+  padding: .5em;
 }
 
 body {
@@ -23,14 +24,52 @@ body {
   line-height: 1.25;
 }
 
-a.thought-date {
+pre {
+  overflow-x: auto;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  padding: .5em;
+  border-radius: 3px;
+  background: #eeeeee;
+  margin: 0em;
+}
+
+code {
+  font-family: 'Liberation Mono', Courier New, monospace;
+  font-size: 0.8em;
+}
+
+code:not(.block){
+  padding: 0em .2em;
+  border-radius: 3px;
+  background: #eeeeee;
+}
+
+.thought-date {
   font-weight: bold;
   font-size: 0.8em;
+  text-align: right;
+}
+
+section.thought {
+  margin: 1em 0em;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #eeeeee;
+  padding: .5em;
+}
+
+div.title {
+  margin: 1em 0em;
 }
 
 </style>
 </head>
 <body>
-<span style="font-style:italic;font-size:2em">
+<div class="title"><span style="font-style:italic;font-size:2em">
 <span style="color:#ff0000">t</span><span style="color:#00ff00">h</span><span style="color:#ffff00">o</span><span style="color:#0000ff">u</span><span style="color:#ff00ff">g</span><span style="color:#00ffff">h</span><span style="color:#ff0000">t</span><span style="color:#00ff00">s</span>
-</span>
+</span></div>
+
+<!-- Your thoughts start here -->
+
