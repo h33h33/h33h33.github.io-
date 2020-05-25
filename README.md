@@ -1,9 +1,11 @@
+*Hi! It's incredibly cool that people seem to like this program! But a small warning: **expect frequent, breaking changes prior to 1.0!** If you run `thoughts update` and it fails, you can almost certainly resolve the situation by manually downloading the latest tagged release and reinstalling with `./install.sh another`. This should not delete your existing `thoughts.html`, and if it does you can always recover from your remote git repo :)*
+
 # *thoughts*
 *thoughts* is a highly portable shell program for making short, tweet-like text posts from a terminal. *thoughts* adds these text posts to a self-contained HTML file, and keeps the file synced in a remote git repository of your choosing. It's up to you to host the file somewhere, but *thoughts* handles everything else. [Here's what it looks like](https://thoughts.maren.hup.is).
 
 ### Requirements
-* any POSIX shell (sh, dash, bash, ksh, zsh, and maybe others)
-* POSIX coreutils
+* POSIX shell (sh, dash, bash, ksh, zsh, and maybe others)
+* coreutils
 * Git
 
 *Note: Portability is the primary priority. Please open an issue if any shell code or coreutil invocations behave unexpectedly.*
@@ -24,6 +26,8 @@ Install from anywhere with `./install.sh`.
 
 ### First install:
 *(Do this if you aren't already using thoughts on another computer)*
+* Install and configure git
+* Download the latest tagged release of *thoughts* from [here](https://github.com/marenbeam/thoughts/releases).
 * Install with `./install.sh`
 * Add `~/.local/bin` to your PATH
 * Use `git init` to create a git repository in `~/.local/share/thoughts`, then point it at an empty remote origin
