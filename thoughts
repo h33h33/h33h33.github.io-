@@ -1,7 +1,8 @@
-#!/usr/bin/env sh
+#!/bin/sh
 cmd="$1"
 set -euf pipefail
 stuffDir=$HOME/.local/share/thoughts
+binDir=$HOME/.local/bin
 
 # "update" command
 if [ "$cmd" = "update" ]; then
@@ -9,11 +10,12 @@ if [ "$cmd" = "update" ]; then
     cd "$stuffDir"/thoughts-temp
     tag=$(git tag -l | tail -1)
     git checkout tags/"$tag"
-    cp "$stuffDir"/thoughts-temp/.head.html "$stuffDir"
-    cp "$stuffDir"/thoughts-temp/.foot.html "$stuffDir"
-    cp "$stuffDir"/thoughts-temp/README.md "$stuffDir"
-    cp "$stuffDir"/thoughts-temp/thoughts "$HOME"/.local/bin
-    chmod +x "$HOME"/.local/bin/thoughts
+    cp "$stuffDir"/thoughts-temp/update.sh "$stuffDir"/bin
+    chmod +x "$stuffDir"/bin/update.sh
+    
+    # run update.sh from the new release
+    sh "$stuffDir"/bin/update.sh
+    
     rm -rf "$stuffDir"/thoughts-temp
     echo
     echo "Done!"
@@ -67,7 +69,7 @@ tail -c 1 "$rand".txt | read -r _ || echo >> "$rand".txt
 
 # replace some newlines with <br>
 # and convert codeblock tag into real one
-awk -f "$stuffDir"/parse.awk "$rand".txt > temp.txt && mv temp.txt "$rand".txt
+awk -f "$stuffDir"/bin/parse.awk "$rand".txt > temp.txt && mv temp.txt "$rand".txt
 # get the last 4 characters from the file
 # if they are "<br>", delete them.
 br=$(tail -c 5 "$rand".txt)

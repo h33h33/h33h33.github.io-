@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 cmd="$1"
 set -euf pipefail
 
@@ -15,7 +15,10 @@ if [ -d "$stuffDir" ]; then
     fi
 fi
 
-mkdir -p "$stuffDir"
+mkdir -p "$stuffDir"/bin
+cp parse.awk "$stuffDir"/bin
+cp update.sh "$stuffDir"/bin
+cp README.md "$stuffDir"
 cp .head.html "$stuffDir"
 cp .foot.html "$stuffDir"
 touch "$stuffDir"/.rawthoughts.html
@@ -23,6 +26,7 @@ echo '*' > "$stuffDir"/.gitignore
 echo '!thoughts.html' >> "$stuffDir"/.gitignore
 echo '!.gitignore' >> "$stuffDir"/.gitignore
 echo '!.rawthoughts.html' >> "$stuffDir"/.gitignore
+echo '!.head.html' >> "$stuffDir"/.gitignore
 
 mkdir -p "$binDir"
 cp thoughts "$binDir"
