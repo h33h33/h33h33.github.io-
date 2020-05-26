@@ -17,7 +17,19 @@ BEGIN {isCode=0}
     if (isCode == 1){
         print $0;
     } else {
-        print $0"<br>";
+        field = 1;
+        while (field <= NF) {
+            if ($field ~ /^http:\/\/*/ || $field ~ /^https:\/\/*/) {
+	        printf "<a href=\""$field"\">"$field"</a> ";
+            } else {
+                printf $field" ";
+	    }
+	    field++;
+            # print newline if end of the line
+	    if (field > NF) {
+            print "<br>";
+            }  
+        }  
     }
 }
 END {}

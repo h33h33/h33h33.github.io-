@@ -5,6 +5,7 @@ stuffDir=$HOME/.local/share/thoughts
 binDir=$HOME/.local/bin
 
 # "update" command
+# TODO break out into module
 if [ "$cmd" = "update" ]; then
     git clone https://github.com/marenbeam/thoughts.git "$stuffDir"/thoughts-temp
     cd "$stuffDir"/thoughts-temp
@@ -19,6 +20,7 @@ if [ "$cmd" = "update" ]; then
 fi
 
 # "edit" command
+# TODO break out into module
 if [ "$cmd" = "edit" ]; then
     cd "$stuffDir"
     git pull
@@ -33,6 +35,7 @@ if [ "$cmd" = "edit" ]; then
 fi
 
 # "help" command
+# TODO break out into module
 if [ "$cmd" = "help" ]; then
     echo '$ thoughts'
     echo '  --Share your thoughts'
@@ -53,6 +56,7 @@ if [ "$cmd" = "help" ]; then
 fi
 
 # "style" command
+# TODO break out into module
 if [ "$cmd" = "style" ]; then
     cd "$stuffDir"
     git pull
@@ -84,6 +88,7 @@ tail -c 1 "$rand".txt | read -r _ || echo >> "$rand".txt
 
 # replace some newlines with <br>
 # and convert codeblock tag into real one
+# and linkify things outside of codeblocks
 awk -f "$stuffDir"/bin/parse.awk "$rand".txt > temp.txt && mv temp.txt "$rand".txt
 # get the last 4 characters from the file
 # if they are "<br>", delete them.
