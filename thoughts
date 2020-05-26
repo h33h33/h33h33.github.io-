@@ -15,10 +15,6 @@ if [ "$cmd" = "update" ]; then
     
     # run update.sh from the new release
     sh "$stuffDir"/bin/update.sh
-    
-    rm -rf "$stuffDir"/thoughts-temp
-    echo
-    echo "Done!"
     exit 0
 fi
 
@@ -47,13 +43,32 @@ if [ "$cmd" = "help" ]; then
     echo '$ thoughts edit'
     echo '  --Edit your previously posted thoughts'
     echo
+    echo '$ thoughts style'
+    echo '  --Customize the CSS'
+    echo
     echo "If you need to do some manual intervention,"
     echo "thoughts data lives in $HOME/.local/share/thoughts"
     echo "and the program is installed in $HOME/.local/bin"
     exit 0
 fi
 
-cd ~/.local/share/thoughts
+# "style" command
+if [ "$cmd" = "style" ]; then
+    cd "$stuffDir"
+    git pull
+    "${EDITOR:-vi}" .head.html
+    cat .head.html .rawthoughts.html | cat - .foot.html > thoughts.html
+    git add .
+    git commit -m "update thoughts"
+    git push
+    echo
+    echo "Done! CSS updated."
+    exit 0
+fi
+
+
+
+cd "$stuffDir"
 # get an editor so we can type our thought.
 # generate a random temp filename to avoid collisions.
 # who knows what's in there!
