@@ -1,15 +1,13 @@
-*Warning: **expect frequent breakage prior to 1.0!** If you run `thoughts update` and it fails, you can probably fix by manually downloading the latest tagged release and reinstalling with `./install.sh another`. If that doesn't fix things, you can always recover from your remote git repo.*
+*Thoughts is a work in progress! If `thoughts update` fails, you can probably fix by downloading the latest tagged release and reinstalling with `./install.sh another`. If that doesn't fix things, you can always recover from your remote git repo.*
 
 # *thoughts*
-*thoughts* is a highly portable shell program for making tweet-like text posts from a terminal, and adding them to a self-contained HTML document.
+*thoughts* is a highly portable shell program for making anything-less-than-a-blog-sized text posts from a terminal.
 
-*thoughts* keeps your `thoughts.html` synced in a remote git repository of your choosing. It's up to you to serve the file from somewhere, but *thoughts* handles everything else. [Here's what it looks like](https://thoughts.maren.hup.is).
-
-*thoughts'* intended use case is for writing anything less than a blog post.
+*thoughts* keeps your thoughts in a self-contained HTML document, and syncs it in a remote git repository of your choosing.  It's up to you to serve the file from somewhere, but *thoughts* handles everything else. [Here's what it looks like](https://thoughts.maren.hup.is).
 
 ### Requirements
 * POSIX shell (sh, dash, bash, ksh, zsh, and maybe others)
-* coreutils
+* coreutils (any POSIX -- Gnu, BSD, Mac, etc. are all bueno)
 * Git
 
 *Note: Portability is the primary priority. Please open an issue if any shell code or coreutil invocations behave unexpectedly.*
@@ -41,7 +39,7 @@ Install from anywhere with `./install.sh`.
 * From anywhere, type `thoughts`
 
 ### Installing on another computer:
-*thoughts* can be installed on multiple computers, all updating the same remote `thoughts.html`.
+*thoughts* can be installed on *N* computers, all updating the same remote `thoughts.html`.
 
 * Install with `./install.sh another`
 * Follow the prompts
@@ -57,21 +55,22 @@ Install from anywhere with `./install.sh`.
   * Customize the default CSS
 
 ## "Markdown"
-*thoughts* supports pretend, non-standard markdown that's mostly just HTML. Why hide the details? Here's what's supported:
+*thoughts* supports non-standard markdown that's mostly just HTML. Why hide the details? :)
+Here's what's supported:
+
 * Italics
   * `You can write <i>italics</i>`
 * Bold
   * `You can write in <b>bold</b>`
-* You can write in ***bolditalics*** by nesting those
 * Inline code
-  * `You can write <code>inline code</i>`
-  * Currently, if you put HTML code in an inline code tag, it'll try to render the HTML
+  * `You can write <code>inline code</code>`
 * Code blocks
   * ```
     <block>
     You can write code blocks
-    With this fake HTML-looking tag I invented
-    Each tag must me on its own line or it won't parse
+    With this fake, HTML-looking tag I invented!
+    Each tag must me on its own line or it won't parse,
+    exactly like this.
     </block>
     ```
 * Links
@@ -85,10 +84,10 @@ The happy path is pretty narrow! Arbitrary HTML is theoretically supported, but 
   * The `edit` and `style` commands mostly just dump you into raw HTML/CSS world and leave you to it, but they also wrap git things so that your changes stay synced across all your computers
   * If a git thing is breaking, inspect the situation in `$HOME/.local/share/thoughts` (that's where all *thoughts* data lives)
 * *thoughts'* default configuration pulls two fonts from a CDN ([xz/fonts](https://fonts.xz.style/), not Google). You can easily change this with `thoughts style`
-* If you post a thought that contains HTML, that HTML will definitely render in the browser. It might work, or it might break horrifically. Have fun!
+* If you post a thought that contains HTML outside of a `<block>` tag, that HTML will definitely render in the browser. It might work, or it might break. Experiment!
 
 ## Future
-My hope is that as of one of the v0.3 point-releases, "preview" will get implemented and then *thoughts* will be feature complete! When 1.0 is ready, *thoughts* will be "done" -- with all future releases being bug fixes and portability improvements.
+As of some v0.3.x point-releases, `preview` will get implemented and *thoughts* will be feature complete. When 1.0 is ready, *thoughts* will be done -- all future releases will be bug fixes and portability improvements.
 
 * ~Use POSIX coreutils so it can run on Mac/BSD/etc.~ Done!
 * ~Use sh rather than bash~ Done!
@@ -101,5 +100,6 @@ My hope is that as of one of the v0.3 point-releases, "preview" will get impleme
 * ~Support a small subset of markdown~ Done!
 * ~Edit/delete previous thoughts~ Done!
 * Preview thoughts
+* Search the source for `TODO` to find more!
 
 <3
