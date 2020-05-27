@@ -57,6 +57,7 @@ fi
 
 # "style" command
 # TODO break out into module
+# TODO clarify how CSS does/doesn't get written/overwritten between remote and local
 if [ "$cmd" = "style" ]; then
     cd "$stuffDir"
     git pull
