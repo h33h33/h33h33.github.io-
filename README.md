@@ -88,7 +88,7 @@ The happy path is pretty narrow! Arbitrary HTML is theoretically supported, but 
 * If you post a thought that contains HTML, that HTML will definitely render in the browser. It might work, or it might break horrifically. Have fun!
 
 ## Future
-My hope is that as of one of the v0.3 point-releases, "preview" will get implemented and then *thoughts* will be feature complete! When 1.0 is ready, then *thoughts* will be "done" -- with all future releases being bug fixes and portability improvements.
+My hope is that as of one of the v0.3 point-releases, "preview" will get implemented and then *thoughts* will be feature complete! When 1.0 is ready, *thoughts* will be "done" -- with all future releases being bug fixes and portability improvements.
 
 * ~Use POSIX coreutils so it can run on Mac/BSD/etc.~ Done!
 * ~Use sh rather than bash~ Done!
