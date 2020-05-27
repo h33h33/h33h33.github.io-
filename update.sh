@@ -1,5 +1,7 @@
 #!/bin/sh
 set -euf pipefail
+stuffDir=$HOME/.local/share/thoughts
+binDir=$HOME/.local/bin
 
 ###
 ### This script must handle *all* "update" steps
