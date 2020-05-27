@@ -18,8 +18,13 @@ cp "$stuffDir"/thoughts-temp/.head.html "$stuffDir"
 echo
 echo "Your old CSS was moved to $stuffDir/.head-old.html"
 echo "If you made customizations, go there and diff it against .head.html"
+echo "Then sort out the situation with 'thoughts style'"
 
 rm -rf "$stuffDir"/thoughts-temp
+cd "$stuffDir"
+git add .
+git commit -m "update css"
+git push
 echo
 echo "Done!"
 exit 0

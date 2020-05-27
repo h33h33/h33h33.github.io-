@@ -64,7 +64,7 @@ if [ "$cmd" = "style" ]; then
     "${EDITOR:-vi}" .head.html
     cat .head.html .rawthoughts.html | cat - .foot.html > thoughts.html
     git add .
-    git commit -m "update thoughts"
+    git commit -m "update css"
     git push
     echo
     echo "Done! CSS updated."
