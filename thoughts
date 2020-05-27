@@ -96,9 +96,7 @@ br=$(tail -c 5 "$rand".txt)
 if [ "$br" = '<br>' ]; then
     sed '$ s/.\{4\}$//' "$rand".txt > temp.txt && mv temp.txt "$rand".txt
 fi
-
 thought=$(cat "$rand".txt)
-rm "$rand".txt
 
 now=$(date +"%I:%M %p | %Y-%m-%d")
 dateHash=$(date | cksum | tr -d ' ')
@@ -113,5 +111,6 @@ cat .head.html .rawthoughts.html | cat - .foot.html > thoughts.html
 git add .
 git commit -m "update thoughts"
 git push
+rm "$rand".txt
 echo
 echo "your thoughts have been shared"
