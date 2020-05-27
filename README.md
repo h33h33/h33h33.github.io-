@@ -57,7 +57,7 @@ Install from anywhere with `./install.sh`
   * Customize the default CSS
 
 ## "Markdown"
-*thoughts* supports non-standard markdown that's mostly just HTML. Why hide the details? :)
+*thoughts* supports non-standard markdown that's mostly just HTML. Why hide the details? :)  
 Here's what's supported:
 
 * Italics
