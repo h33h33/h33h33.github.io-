@@ -17,12 +17,12 @@
 * Type `thoughts` in a terminal and press `<enter>`
 * Your preferred editor opens. Type your thought, then save and exit
 * *thoughts* outputs a single, self-contained HTML file with your thought added. The thought is timestamped and the timestamp is linkified.
-* *thoughts* pushes your updated `thoughts.html` to a remote git repository of your choosing. It's up to you to host it somewhere.
+* *thoughts* pushes your updated `thoughts.html` to a remote git repository of your choosing. 
 
 ## Installing
 *Download the most recent release from [here](https://github.com/marenbeam/thoughts/releases). `master` is used for development, and is sometimes broken.*
 
-Install from anywhere with `./install.sh`.
+Install from anywhere with `./install.sh`
 
 ### First install:
 *(Do this if you've never set up thoughts before)*
@@ -32,10 +32,12 @@ Install from anywhere with `./install.sh`.
 * Add `~/.local/bin` to your PATH
 * Use `git init` to create a git repository in `~/.local/share/thoughts`, then point it at an empty remote origin
 * Be sure the repo is set up properly:
-  * `$ cd ~/.local/share/thoughts`
-  * `$ git add .`
-  * `$ git commit -m "init"`
-  * `$ git push`
+  * ```
+    $ cd ~/.local/share/thoughts
+    $ git add .
+    $ git commit -m "init"
+    $ git push
+    ```
 * From anywhere, type `thoughts`
 
 ### Installing on another computer:
