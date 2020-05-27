@@ -3,7 +3,9 @@
 # *thoughts*
 *thoughts* is a highly portable shell program for making anything-less-than-a-blog-sized text posts from a terminal.
 
-*thoughts* keeps your thoughts in a self-contained HTML document, and syncs it in a remote git repository of your choosing.  It's up to you to serve the file from somewhere, but *thoughts* handles everything else. [Here's what it looks like](https://thoughts.maren.hup.is).
+![Screenshot of thoughts](/thoughts.png)
+
+*thoughts* keeps your thoughts in a self-contained HTML document, and syncs it in a remote git repository of your choosing.  It's up to you to serve the file from somewhere, but *thoughts* handles everything else.
 
 ### Requirements
 * POSIX shell (sh, dash, bash, ksh, zsh, and maybe others)
