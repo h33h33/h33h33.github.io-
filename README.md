@@ -91,7 +91,7 @@ The happy path is pretty narrow! Arbitrary HTML is theoretically supported, but 
 * If you post a thought that contains HTML outside of a `<block>` tag, that HTML will definitely render in the browser. It might work, or it might break. Experiment!
 
 ## Future
-As of some v0.3.x point-releases, `preview` will get implemented and *thoughts* will be feature complete. When 1.0 is ready, *thoughts* will be done -- all future releases will be bug fixes and portability improvements.
+As of some v0.3.x point-release, `preview` will get implemented and *thoughts* will be feature complete. When 1.0 is ready, *thoughts* will be done -- all future releases will be bug fixes and portability improvements.
 
 * ~Use POSIX coreutils so it can run on Mac/BSD/etc.~ Done!
 * ~Use sh rather than bash~ Done!
