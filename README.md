@@ -1,13 +1,13 @@
 *Thoughts is a work in progress! If `thoughts update` fails, you can probably fix by downloading the latest tagged release and reinstalling with `./install.sh another`. If that doesn't fix things, you can always recover from your remote git repo.*
 
 # *thoughts*
-*thoughts* is a highly portable shell program for making anything-less-than-a-blog-sized text posts from a terminal.
 
-![Screenshot of thoughts](/thoughts.png)
+*thoughts* is a highly portable shell program for making anything-less-than-a-blog-sized text posts from a terminal.
 
 *thoughts* keeps your thoughts in a self-contained HTML document, and syncs it in a remote git repository of your choosing.  It's up to you to serve the file from somewhere, but *thoughts* handles everything else.
 
 ### Requirements
+
 * POSIX shell (sh, dash, bash, ksh, zsh, and maybe others)
 * coreutils (any POSIX -- Gnu, BSD, Mac, etc. are all bueno)
 * Git
@@ -22,11 +22,13 @@
 * *thoughts* pushes your updated `thoughts.html` to a remote git repository of your choosing. 
 
 ## Installing
+
 *Download the most recent release from [here](https://github.com/marenbeam/thoughts/releases). `master` is used for development, and is sometimes broken.*
 
 Install from anywhere with `./install.sh`
 
 ### First install:
+
 *(Do this if you've never set up thoughts before)*
 * Install and configure git
 * Download the latest tagged release of *thoughts* from [here](https://github.com/marenbeam/thoughts/releases).
@@ -43,12 +45,14 @@ Install from anywhere with `./install.sh`
 * From anywhere, type `thoughts`
 
 ### Installing on another computer:
+
 *thoughts* can be installed on *N* computers, all updating the same remote `thoughts.html`.
 
 * Install with `./install.sh another`
 * Follow the prompts
 
 ## Commands
+
 * `$ thoughts update`
   * Download and install the latest tagged release
 * `$ thoughts edit`
@@ -59,6 +63,7 @@ Install from anywhere with `./install.sh`
   * Customize the default CSS
 
 ## "Markdown"
+
 *thoughts* supports non-standard markdown that's mostly just HTML. Why hide the details? :)  
 Here's what's supported:
 
@@ -83,6 +88,7 @@ Here's what's supported:
 The happy path is pretty narrow! Arbitrary HTML is theoretically supported, but there are likely to be some inexplicable side-effects.
 
 ## Notes
+
 * Newlines are converted into `<br>` in all cases, so space your paragraphs as you wish! There will only be space between lines if you put it there.
 * *thoughts* is wrapping lots of git behavior
   * The `edit` and `style` commands mostly just dump you into raw HTML/CSS world and leave you to it, but they also wrap git things so that your changes stay synced across all your computers
@@ -91,6 +97,7 @@ The happy path is pretty narrow! Arbitrary HTML is theoretically supported, but 
 * If you post a thought that contains HTML outside of a `<block>` tag, that HTML will definitely render in the browser. It might work, or it might break. Experiment!
 
 ## Future
+
 As of some v0.3.x point-release, `preview` will get implemented and *thoughts* will be feature complete. When 1.0 is ready, *thoughts* will be done -- all future releases will be bug fixes and portability improvements.
 
 * ~Use POSIX coreutils so it can run on Mac/BSD/etc.~ Done!
