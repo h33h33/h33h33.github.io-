@@ -8,16 +8,16 @@ binDir=$HOME/.local/bin
 ### because it reinstalls its own caller (thoughts itself)
 ###
 
-#cp "$stuffDir"/thoughts-temp/.foot.html "$stuffDir"
-#echo "copied foot"
-#cp "$stuffDir"/thoughts-temp/README.md "$stuffDir"
-#echo "copied readme"
-#cp "$stuffDir"/thoughts-temp/parse.awk "$stuffDir"/bin
-#echo "copied parse"
-#cp "$stuffDir"/thoughts-temp/thoughts "$binDir"
-#echo "copied thoughts itself"
-#chmod +x "$binDir"/thoughts
-#echo "chmod thoughts"
+cp "$stuffDir"/thoughts-temp/.foot.html "$stuffDir"
+echo "copied foot"
+cp "$stuffDir"/thoughts-temp/README.md "$stuffDir"
+echo "copied readme"
+cp "$stuffDir"/thoughts-temp/parse.awk "$stuffDir"/bin
+echo "copied parse"
+cp "$stuffDir"/thoughts-temp/thoughts "$binDir"
+echo "copied thoughts itself"
+chmod +x "$binDir"/thoughts
+echo "chmod thoughts"
 
 # Handle the possibility of overwriting user's custom CSS
 echo
