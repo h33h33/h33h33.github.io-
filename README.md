@@ -6,7 +6,7 @@
 
 *thoughts* keeps your thoughts in a self-contained HTML document, and syncs it in a remote git repository of your choosing.  It's up to you to serve the file from somewhere, but *thoughts* handles everything else.
 
-Its default configuration looks like [this](https://thoughts.maren.hup.is)
+The mostly-default configuration looks like [this](https://thoughts.maren.hup.is).
 
 ### Requirements
 
