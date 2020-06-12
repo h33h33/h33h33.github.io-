@@ -1,6 +1,6 @@
 #!/bin/sh
+set -euf
 cmd="$1"
-set -euf pipefail
 
 binDir=$HOME/.local/bin
 stuffDir=$HOME/.local/share/thoughts
