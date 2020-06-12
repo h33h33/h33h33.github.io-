@@ -1,5 +1,6 @@
 #!/bin/sh
 set -euf
+
 stuffDir=$HOME/.local/share/thoughts
 binDir=$HOME/.local/bin
 

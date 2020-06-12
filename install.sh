@@ -1,6 +1,11 @@
 #!/bin/sh
 set -euf
-cmd="$1"
+
+if [ -z ${1+x} ]; then
+  cmd='nope'
+else
+  cmd="$1"
+fi
 
 binDir=$HOME/.local/bin
 stuffDir=$HOME/.local/share/thoughts
