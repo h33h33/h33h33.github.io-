@@ -9,7 +9,7 @@ binDir=$HOME/.local/bin
 ###
 
 cp "$stuffDir"/thoughts-temp/.foot.html "$stuffDir"
-echo "copied foot"
+echo "copied footer"
 cp "$stuffDir"/thoughts-temp/README.md "$stuffDir"
 echo "copied readme"
 cp "$stuffDir"/thoughts-temp/parse.awk "$stuffDir"/bin

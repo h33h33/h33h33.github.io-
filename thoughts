@@ -9,7 +9,7 @@ binDir=$HOME/.local/bin
 if [ "$cmd" = "update" ]; then
     git clone https://github.com/marenbeam/thoughts.git "$stuffDir"/thoughts-temp
     cd "$stuffDir"/thoughts-temp
-    tag=$(git tag -l | tail -1)
+    tag=$(git tag -l | tail -n 1)
     git checkout tags/"$tag"
     cp "$stuffDir"/thoughts-temp/update.sh "$stuffDir"/bin
     chmod +x "$stuffDir"/bin/update.sh
