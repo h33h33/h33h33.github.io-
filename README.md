@@ -23,7 +23,7 @@ Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file 
 
 ## Installing
 
-*Download the most recent release from [here](https://github.com/marenbeam/thoughts/releases). `master` is used for development, and is sometimes broken.*
+*Download the latest release from [here](https://github.com/marenbeam/thoughts/releases). `master` is used for development, and is sometimes broken.*
 
 Install from anywhere with `./install.sh`
 
@@ -98,6 +98,6 @@ Arbitrary HTML is theoretically supported outside of code blocks, but there are 
 
 ## Future
 
-There's no future -- Thoughts is probably feature complete. Only bug fixes and portability improvements from now on.
+There's no future -- Thoughts is probably feature complete. Only bug fixes and portability improvements from now on :)
 
 <3
