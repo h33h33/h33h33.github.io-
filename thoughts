@@ -51,7 +51,7 @@ help () {
     echo '  * Customize the CSS'
     echo
     echo '$ thoughts preview'
-    echo '  * Preview the HTML output of a thought while working on it'
+    echo '  * Preview a thought in a browser while working on it'
     echo
     echo "If you need to do some manual intervention,"
     echo "thoughts data lives in $HOME/.local/share/thoughts"
