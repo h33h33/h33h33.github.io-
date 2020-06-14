@@ -52,7 +52,7 @@ BEGIN {isCode=0}
     
     if (isCode == 0) {
         # if the line is empty, make it a <br> and move on
-        # TODO make this write <br> even if the line has just spaces
+        # TODO make this write <br> even if the line has just spaces/tabs/etc.
         if ($0 == "") {
             print "<br>";
 	    next;
