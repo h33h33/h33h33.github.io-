@@ -19,7 +19,7 @@ Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file 
 * Type `thoughts` in a terminal and press `<enter>`
 * Your preferred text editor opens. Type your thought, then save and exit
 * Thoughts outputs a single, self-contained HTML file with your thought added. The thought is timestamped and the timestamp is linkified
-* Thoughts pushes your updated `thoughts.html` to a remote git repository of your choosing. 
+* Thoughts pushes your updated `thoughts.html` to a remote git repository. 
 
 ## Installing
 
