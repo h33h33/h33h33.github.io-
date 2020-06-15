@@ -2,7 +2,7 @@
 
 Thoughts is a POSIX-compliant shell program for making less-than-a-blog-sized text posts from a terminal.
 
-Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file in any remote git repository. It's up to you to serve the file from somewhere, but *thoughts* handles everything else.
+Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file in any remote git repository. It's up to you to serve the file from somewhere, but Thoughts handles everything else.
 
 [Here's](https://maren.hup.is/thoughts) what it can look like.
 
