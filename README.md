@@ -29,7 +29,7 @@ Install from anywhere with `./install.sh`
 
 ### First install:
 
-*(Do this if you've never set up thoughts before)*
+*(Do this if you've never set up Thoughts before)*
 * Install and configure git
 * Download the latest tagged release of Thoughts from [here](https://github.com/marenbeam/thoughts/releases).
 * Install with `./install.sh`
