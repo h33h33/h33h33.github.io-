@@ -1,4 +1,4 @@
-# Thoughts :speaking_head: :thought_balloon:
+# Thoughts :thought_balloon::woman_technologist::speaking_head:
 
 Thoughts is a POSIX-compliant shell program for making less-than-a-blog-sized text posts from a terminal.
 
