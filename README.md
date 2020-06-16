@@ -1,3 +1,7 @@
+[![Build badge](https://img.shields.io/badge/build-hopeful-green.svg)](https://shields.io/)[![Generic badge](https://img.shields.io/badge/docs-right here-<COLOR>.svg)](https://shields.io/)[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+*You type opinions in vim and get back a website.*
+
 # Thoughts :thought_balloon::woman_technologist::speaking_head:
 
 Thoughts is a POSIX-compliant shell program for making less-than-a-blog-sized text posts from a terminal.
