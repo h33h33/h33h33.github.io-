@@ -1,4 +1,4 @@
-[![Build badge](https://img.shields.io/badge/build-hopeful-green.svg)](https://emojipedia.org/crossed-fingers/) [![Docs badge](https://img.shields.io/badge/docs-right%20here-green.svg)](https://github.com/marenbeam/thoughts) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Build badge](https://img.shields.io/badge/build-hopeful-green.svg)](https://emojipedia.org/crossed-fingers/) [![Docs badge](https://img.shields.io/badge/docs-right%20here-green.svg)](https://github.com/marenbeam/thoughts) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
 ***Bottom line:**  you type opinions in vim and get back a website.*
 
 # Thoughts :thought_balloon::woman_technologist::speaking_head:
