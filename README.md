@@ -1,7 +1,7 @@
 [![Build badge](https://img.shields.io/badge/build-hopeful-green.svg)](https://emojipedia.org/crossed-fingers/) [![Docs badge](https://img.shields.io/badge/docs-right%20here-green.svg)](https://github.com/marenbeam/thoughts) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
-***Bottom line:** Twitter but POSIX, as a single HTML file.*
+***Bottom line:** Twitter but POSIX, by self-hosting one file.*
 
-# Thoughts :thought_balloon::woman_technologist::speaking_head:
+# Thoughts :thought_balloon::speaking_head:
 
 Thoughts is a POSIX-compliant shell program for making less-than-a-blog-sized text posts from a terminal.
 
