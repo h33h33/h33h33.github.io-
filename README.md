@@ -101,6 +101,6 @@ Arbitrary HTML is theoretically supported outside of code blocks, but there are 
 
 ## Future
 
-There's no future -- Thoughts is probably feature complete. Only bug fixes and portability improvements from now on :)
+Thoughts is feature complete. Only bug fixes and portability improvements from now on :)
 
 <3

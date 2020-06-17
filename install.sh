@@ -2,7 +2,7 @@
 set -euf
 
 if [ -z ${1+x} ]; then
-  cmd='nope'
+  cmd='default'
 else
   cmd="$1"
 fi
