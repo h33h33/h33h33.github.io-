@@ -34,9 +34,8 @@ Install from anywhere with `./install.sh`
 
 *(Do this if you've never set up Thoughts before)*
 
-* Install and configure git
-* `$ git clone https://github.com/marenbeam/thoughts.git ~/thoughts-source`
-* `$ cd ~/thoughts-source`
+* Install and [configure](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) git
+* `$ git clone https://github.com/marenbeam/thoughts.git ~/thoughts-source && cd ~/thoughts-source`
 * Install with `./install.sh`
 * Add `$HOME/.local/bin` to your PATH
 * Use `git init` to create a git repository in `$HOME/.local/share/thoughts`, then point it at an empty remote origin
@@ -81,7 +80,7 @@ Thoughts supports non-standard markdown that's mostly just HTML.
   * ```
     <block>
     You can write code blocks with this fake tag I invented.
-    Each <block> tag *must* be on its own line or it won't parse correctly.
+    Each <block> tag must be on its own line or it won't parse correctly.
     Exactly like this.
     </block>
     ```
