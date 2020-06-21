@@ -35,7 +35,8 @@ Install from anywhere with `./install.sh`
 *(Do this if you've never set up Thoughts before)*
 
 * Install and configure git
-* Download the latest tagged release of Thoughts from [here](https://github.com/marenbeam/thoughts/releases).
+* `$ git clone https://github.com/marenbeam/thoughts.git ~/thoughts-source`
+* `$ cd ~/thoughts-source`
 * Install with `./install.sh`
 * Add `$HOME/.local/bin` to your PATH
 * Use `git init` to create a git repository in `$HOME/.local/share/thoughts`, then point it at an empty remote origin
@@ -58,7 +59,7 @@ Install from anywhere with `./install.sh`
 ## Commands
 
 * `$ thoughts update`
-  * Download and install the latest tagged release
+  * Download and install the latest updates
 * `$ thoughts edit`
   * Edit your previously posted thoughts
 * `$ thoughts style`
