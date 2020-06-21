@@ -1,11 +1,13 @@
-[![Build badge](https://img.shields.io/badge/build-hopeful-green.svg)](https://emojipedia.org/crossed-fingers/) [![Docs badge](https://img.shields.io/badge/docs-right%20here-green.svg)](https://github.com/marenbeam/thoughts) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
+[![Build badge](https://img.shields.io/badge/build-hopeful-green.svg)](https://emojipedia.org/crossed-fingers/) [![Maintained badge](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/marenbeam/thoughts/issues) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
 ***Bottom line:** Twitter but POSIX, by self-hosting one file.*
 
 # Thoughts :thought_balloon::speaking_head:
 
 Thoughts is a POSIX-compliant shell program for making less-than-a-blog-sized text posts from a terminal.
 
-Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file in any remote git repository. It's up to you to serve the file from somewhere, but Thoughts handles everything else.
+Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file in a remote git repository. It's up to you to serve the file from somewhere, but Thoughts handles everything else.
+
+Thoughts can be installed on an arbitrary number of computers, all updating the same remote HTML file.
 
 [Here's](https://maren.hup.is/thoughts) what it can look like.
 
@@ -15,24 +17,23 @@ Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file 
 * POSIX coreutils
 * Git
 
-*Note: Portability is the primary priority. Thoughts should run without modification on any UNIX-adjacent system. Please open an issue if any shell code or coreutil invocations behave unexpectedly.*
+*Note: Portability is the primary priority. Thoughts should run without modification on any UNIX-adjacent system. Please [open an issue](https://github.com/marenbeam/thoughts/issues) if any shell code or coreutil invocations misbehave.*
 
 ## How it works
 
 * Type `thoughts` in a terminal and press `<enter>`
 * Your preferred text editor opens. Type your thought, then save and exit
-* Thoughts outputs a single, self-contained HTML file with your thought added. The thought is timestamped and the timestamp is linkified
+* Thoughts outputs `thoughts.html` with your thought added
 * Thoughts pushes your updated `thoughts.html` to a remote git repository. 
 
 ## Installing
-
-*Download the latest release from [here](https://github.com/marenbeam/thoughts/releases). `master` is used for development, and is sometimes broken.*
 
 Install from anywhere with `./install.sh`
 
 ### First install:
 
 *(Do this if you've never set up Thoughts before)*
+
 * Install and configure git
 * Download the latest tagged release of Thoughts from [here](https://github.com/marenbeam/thoughts/releases).
 * Install with `./install.sh`
@@ -49,7 +50,7 @@ Install from anywhere with `./install.sh`
 
 ### Installing on another computer:
 
-Thoughts can be installed on *N* computers, all updating the same remote `thoughts.html`
+*(Do this if you already have a remote `thoughts.html`)*
 
 * Install with `./install.sh another`
 * Follow the prompts
@@ -78,11 +79,9 @@ Thoughts supports non-standard markdown that's mostly just HTML.
 * Code blocks
   * ```
     <block>
-    You can write code blocks
-    with this fake tag I invented.
-    Each <block> tag *must* be on
-    its own line or it won't parse,
-    exactly like this.
+    You can write code blocks with this fake tag I invented.
+    Each <block> tag *must* be on its own line or it won't parse correctly.
+    Exactly like this.
     </block>
     ```
 * Links
