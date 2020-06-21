@@ -23,14 +23,16 @@ echo "chmod thoughts"
 # Handle the possibility of overwriting user's custom CSS
 echo
 if ! diff "$stuffDir"/thoughts-temp/.head.html "$stuffDir"/.head.html; then
+    echo
     echo "WARNING:"
     echo "The CSS in this release is different than what you currently have."
     echo "It could be upstream updates, or maybe you made some customizations."
     echo "Check out the diff above."
     echo
     echo "If you haven't made custom CSS changes, you can safely overwrite and install."
+    echo "If you HAVE made CSS changes, just select 'n' and the new CSS will be written somewhere else."
     echo
-    printf "DO YOU WANT TO OVERWRITE AND INSTALL? [y/n]:"
+    printf "DO YOU WANT TO OVERWRITE YOUR CSS? [y/n]:"
     read -r reply
     if [ "$reply" = "y" ]; then
         cp "$stuffDir"/thoughts-temp/.head.html "$stuffDir"
