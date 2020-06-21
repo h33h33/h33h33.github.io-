@@ -17,7 +17,7 @@ Thoughts can be installed on an arbitrary number of computers, all updating the 
 * POSIX coreutils
 * Git
 
-*Note: Portability is the primary priority. Thoughts should run without modification on any UNIX-adjacent system. Please [open an issue](https://github.com/marenbeam/thoughts/issues) if any shell code or coreutil invocations misbehave.*
+*Note: Thoughts should run without modification on any UNIX-adjacent system. Please [open an issue](https://github.com/marenbeam/thoughts/issues) if any shell code or coreutil invocations misbehave.*
 
 ## How it works
 
