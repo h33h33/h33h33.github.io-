@@ -41,9 +41,8 @@ if ! diff "$stuffDir"/thoughts-temp/.head.html "$stuffDir"/.head.html; then
     else
         cp "$stuffDir"/thoughts-temp/.head.html "$stuffDir"/.head-new.html
         echo
-	echo "We did not overwrite the CSS."
         echo "New CSS is in $HOME/.local/share/thoughts/.head-new.html"
-	echo "And you'll need to update the CSS yourself with \"thoughts style\""
+	echo "If you want, you can update the CSS yourself with \"thoughts style\""
     fi
 fi
 rm -rf "$stuffDir"/thoughts-temp
