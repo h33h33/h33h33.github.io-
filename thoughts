@@ -101,11 +101,8 @@ default () {
     
     now=$(date +"%I:%M %p | %Y-%m-%d")
     dateHash=$(date | cksum | tr -d ' ')
-    blob="<section class=\"thought\"><div class=\"thought-date\"><a class=\"thought-date\" id=\"$dateHash\" href=\"#$dateHash\">
-    $now</a></div><div class=\"thought\">
-    $thought
-    </div></section>
-    "
+    blob="<section class=\"thought\"><div class=\"thought-date\"><a class=\"thought-date\" id=\"$dateHash\" href=\"#$dateHash\">\n$now</a></div><div class=\"thought\">\n$thought\n</div></section>\n"
+    
     git pull
     echo "$blob" | cat - .rawthoughts.html > "$dateHash".html && mv "$dateHash".html .rawthoughts.html
     cat .head.html .rawthoughts.html .foot.html > thoughts.html
@@ -146,11 +143,7 @@ preview () {
     thought=$(cat thought.txt)
     now=$(date +"%I:%M %p | %Y-%m-%d")
     dateHash=$(date | cksum | tr -d ' ')
-    blob="<section class=\"thought\"><div class=\"thought-date\"><a class=\"thought-date\" id=\"$dateHash\" href=\"#$dateHash\">
-    $now</a></div><div class=\"thought\">
-    $thought
-    </div></section>
-    "
+    blob="<section class=\"thought\"><div class=\"thought-date\"><a class=\"thought-date\" id=\"$dateHash\" href=\"#$dateHash\">\n$now</a></div><div class=\"thought\">\n$thought\n</div></section>\n"
     echo "$blob" > thought.txt
 
     # make the preview page
