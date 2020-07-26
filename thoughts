@@ -12,7 +12,7 @@ binDir=$HOME/.local/bin
 
 # "update" command
 update () {
-    git clone https://github.com/marenbeam/thoughts.git "$stuffDir"/thoughts-temp
+    git clone https://github.com/thwidge/thoughts.git "$stuffDir"/thoughts-temp
     cd "$stuffDir"/thoughts-temp
     cp "$stuffDir"/thoughts-temp/update.sh "$stuffDir"/bin/update.sh
     chmod +x "$stuffDir"/bin/update.sh
