@@ -32,6 +32,8 @@ echo '!thoughts.html' >> "$stuffDir"/.gitignore
 echo '!.gitignore' >> "$stuffDir"/.gitignore
 echo '!.rawthoughts.html' >> "$stuffDir"/.gitignore
 echo '!.head.html' >> "$stuffDir"/.gitignore
+echo '!cloudbuild.yaml' >> "$stuffDir"/.gitignore
+echo '!Dockerfile' >> "$stuffDir"/.gitignore
 
 mkdir -p "$binDir"
 cp thoughts "$binDir"
