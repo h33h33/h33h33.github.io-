@@ -1,5 +1,5 @@
-[![Build badge](https://img.shields.io/badge/build-hopeful-green.svg)](https://emojipedia.org/crossed-fingers/) [![Maintained badge](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/marenbeam/thoughts/issues) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
-***Bottom line:** Twitter but POSIX, by self-hosting one file.*
+[![Build badge](https://img.shields.io/badge/build-hopeful-green.svg)](https://emojipedia.org/crossed-fingers/) [![Maintained badge](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/thwidge/thoughts/issues) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
+***Bottom line:*** *Twitter but POSIX, by self-hosting one file.*
 
 # Thoughts :thought_balloon:
 
@@ -9,7 +9,7 @@ Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file 
 
 Thoughts can be installed on an arbitrary number of computers, all updating the same remote HTML file.
 
-[Here's](https://www.thwidge.net/thoughts) what it can look like.
+[Here's](http://www.thwidge.net/thoughts) what it can look like.
 
 ### Requirements
 
@@ -17,7 +17,7 @@ Thoughts can be installed on an arbitrary number of computers, all updating the 
 * POSIX coreutils
 * Git
 
-*Note: Thoughts should run without modification on any UNIX-adjacent system. Please [open an issue](https://github.com/marenbeam/thoughts/issues) if any shell code or coreutil invocations misbehave.*
+*Note: Thoughts should run without modification on any UNIX-adjacent system. Please [open an issue](https://github.com/thwidge/thoughts/issues) if any shell code or coreutil invocations misbehave.*
 
 ## How it works
 
@@ -35,7 +35,7 @@ Install from anywhere with `./install.sh`
 *(Do this if you've never set up Thoughts before)*
 
 * Install and [configure](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) git
-* `$ git clone https://github.com/marenbeam/thoughts.git ~/thoughts-source && cd ~/thoughts-source`
+* `$ git clone https://github.com/thwidge/thoughts.git ~/thoughts-source && cd ~/thoughts-source`
 * Install with `./install.sh`
 * Add `$HOME/.local/bin` to your PATH
 * Use `git init` to create a git repository in `$HOME/.local/share/thoughts`, then point it at an empty remote origin
