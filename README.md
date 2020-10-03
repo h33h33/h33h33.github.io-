@@ -9,7 +9,7 @@ Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file 
 
 Thoughts can be installed on an arbitrary number of computers, all updating the same remote HTML file.
 
-[Here's](hup.is/~thwidge/thoughts) what it can look like.
+[Here's](https://hup.is/~thwidge/thoughts) what it can look like.
 
 ### Requirements
 
