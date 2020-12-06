@@ -49,5 +49,10 @@ if ! diff "$stuffDir"/thoughts-temp/.head.html "$stuffDir"/.head.html; then
 fi
 rm -rf "$stuffDir"/thoughts-temp
 echo
+echo "Pushing changes to remote"
+cd "$stuffDir"
+git add .
+git commit -m "update thoughts"
+git push
 echo "Done updating!"
 exit 0
