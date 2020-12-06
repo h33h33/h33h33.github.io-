@@ -27,6 +27,7 @@ edit () {
     git pull
     "${EDITOR:-vi}" .rawthoughts.html
     cat .head.html .rawthoughts.html .foot.html > thoughts.html
+    cp thoughts.html index.html
     git add .
     git commit -m "update thoughts"
     git push
@@ -63,6 +64,7 @@ style () {
     git pull
     "${EDITOR:-vi}" .head.html
     cat .head.html .rawthoughts.html .foot.html > thoughts.html
+    cp thoughts.html index.html
     git add .
     git commit -m "update css"
     git push
@@ -106,6 +108,7 @@ default () {
     git pull
     echo "$blob" | cat - .rawthoughts.html > "$dateHash".html && mv "$dateHash".html .rawthoughts.html
     cat .head.html .rawthoughts.html .foot.html > thoughts.html
+    cp thoughts.html index.html
     git add .
     git commit -m "update thoughts"
     git push
@@ -163,6 +166,7 @@ preview () {
     git pull
     echo "$blob" | cat - .rawthoughts.html > "$dateHash".html && mv "$dateHash".html .rawthoughts.html
     cat .head.html .rawthoughts.html .foot.html > thoughts.html
+    cp thoughts.html index.html
     git add .
     git commit -m "update thoughts"
     git push
