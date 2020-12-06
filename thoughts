@@ -19,6 +19,7 @@ update () {
     
     # run update.sh from the new release
     sh "$stuffDir"/bin/update.sh
+    exit 0
 }
 
 # "edit" command
