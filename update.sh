@@ -13,6 +13,8 @@ cp "$stuffDir"/thoughts-temp/.foot.html "$stuffDir"
 echo "copied footer"
 cp "$stuffDir"/thoughts-temp/README.md "$stuffDir"
 echo "copied readme"
+cp "$stuffDir"/thoughts-temp/thoughts-gitignore "$stuffDir"
+echo "copied gitignore"
 cp "$stuffDir"/thoughts-temp/parse.awk "$stuffDir"/bin
 echo "copied parse"
 cp "$stuffDir"/thoughts-temp/thoughts "$binDir"
