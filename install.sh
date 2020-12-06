@@ -26,14 +26,8 @@ cp update.sh "$stuffDir"/bin
 cp README.md "$stuffDir"
 cp .head.html "$stuffDir"
 cp .foot.html "$stuffDir"
+cp thoughts-gitignore "$stuffDir"/.gitignore
 touch "$stuffDir"/.rawthoughts.html
-echo '*' > "$stuffDir"/.gitignore
-echo '!thoughts.html' >> "$stuffDir"/.gitignore
-echo '!.gitignore' >> "$stuffDir"/.gitignore
-echo '!.rawthoughts.html' >> "$stuffDir"/.gitignore
-echo '!.head.html' >> "$stuffDir"/.gitignore
-echo '!cloudbuild.yaml' >> "$stuffDir"/.gitignore
-echo '!Dockerfile' >> "$stuffDir"/.gitignore
 
 mkdir -p "$binDir"
 cp thoughts "$binDir"
