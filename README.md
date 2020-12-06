@@ -74,9 +74,9 @@ Install from anywhere with `./install.sh`
 Thoughts supports non-standard markdown that's mostly just HTML.
 
 * Italics
-  * `You can write <i>italics</i>`
+  * `You can write <em>italics</em>`
 * Bold
-  * `You can write in <b>bold</b>`
+  * `You can write in <strong>bold</strong>`
 * Inline code
   * `You can write <code>inline code</code>`
 * Code blocks
