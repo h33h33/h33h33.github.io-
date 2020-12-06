@@ -101,9 +101,3 @@ Arbitrary HTML is theoretically supported outside of code blocks, but there are 
   * The `edit` and `style` commands just dump you into raw HTML/CSS world and leave you to it, but they also wrap git things so that your changes stay synced across all your computers
   * If a git thing is breaking, manually inspect the situation in `$HOME/.local/share/thoughts`
 * If you post a thought that contains HTML outside of a `<block>` tag, that HTML will definitely render in the browser. It might work, or it might break. Experiment!
-
-## Future
-
-Thoughts is feature complete. Only bug fixes and portability improvements from now on :)
-
-<3
