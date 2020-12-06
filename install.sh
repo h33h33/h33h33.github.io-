@@ -45,4 +45,4 @@ if [ "$cmd" = "another" ]; then
 fi
 
 echo
-echo 'Done! Add $HOME/.local/bin to your PATH, and create a git repo: https://github.com/marenbeam/thoughts#first-install'
+echo 'Done! Add $HOME/.local/bin to your PATH, and create a git repo: https://github.com/thwidge/thoughts#first-install'
