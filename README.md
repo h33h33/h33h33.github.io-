@@ -12,7 +12,7 @@ Thoughts now supports GitHub pages out of the box. Simply [enable GitHub pages](
 
 Thoughts can be installed on an arbitrary number of computers, all updating the same remote HTML file.
 
-[Here's](https://hup.is/~thwidge/thoughts) what it can look like.
+[Here's what the default configuration looks like](https://thwidge.github.io/eoijctyoierugoci/).
 
 ### Requirements
 
