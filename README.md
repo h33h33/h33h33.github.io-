@@ -87,7 +87,7 @@ Thoughts supports non-standard markdown that's mostly just HTML.
     Exactly like this.
     </block>
     ```
-  * Thoughts uses [highlight.js](https://highlightjs.org/) for no-configuration syntax highlighting in code blocks. If you don't want this, simply remove it by modifying the default CSS.
+  * Thoughts uses [highlight.js](https://highlightjs.org/) for automatic syntax highlighting in code blocks. If you don't want this, simply remove it by modifying the default CSS.
 * Links
   * Links are automatically linkified if they start with `http://` or `https://`, and the "h" has a space in front of it
 
