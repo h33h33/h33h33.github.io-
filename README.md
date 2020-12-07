@@ -41,7 +41,7 @@ Install from anywhere with `./install.sh`
 * `$ git clone https://github.com/thwidge/thoughts.git ~/thoughts-source && cd ~/thoughts-source`
 * Install with `./install.sh`
 * Add `$HOME/.local/bin` to your PATH
-* Use `git init` to create a git repository in `$HOME/.local/share/thoughts`, then point it at an empty remote origin
+* Use `git init` to create a git repository in `$HOME/.local/share/thoughts`, then [point it at an empty remote origin](https://docs.github.com/en/free-pro-team@latest/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
 * Be sure the repo is set up properly:
   * ```
     $ cd ~/.local/share/thoughts
