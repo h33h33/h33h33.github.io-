@@ -24,6 +24,10 @@ body {
   line-height: 1.50;
 }
 
+/*
+This only styles the main title at the top of the page
+which by default is just the word 'thoughts'
+*/
 h1 {
   font-style: italic;
 }
@@ -32,6 +36,10 @@ strong {
   color: #111;
 }
 
+/*
+This styles code blocks
+By default, highlight.js is effecting this styling too
+*/
 pre {
   overflow-x: auto;
   word-wrap: normal;
@@ -39,6 +47,9 @@ pre {
   border-radius: 3px;
 }
 
+/*
+This styles inline <code>
+*/
 code:not(.block) {
   font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   font-size: .8em;
@@ -47,21 +58,41 @@ code:not(.block) {
   border-radius: 3px;
 }
 
+/*
+This also styles code blocks
+Each code block <pre><code class="block">looks like this</code></pre>
+By default, highlight.js is effecting this styling too
+*/
 code {
   font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   font-size: .8em;
 }
 
+/*
+This styles the div that the date/link for each post is in
+The <a> tag itself is also a member of class "though-date"
+so you can style that too if that's helpful
+*/
 div.thought-date {
   font-size: .8em;
   font-weight: bold;
   text-align: right;
 }
 
+/*
+This is the outermost block element for a given
+thought post. You can style it if you like, but this
+is probably only useful for spacing your posts from each other
+in the way you'd like
+*/
 section.thought {
   margin: 1em 0em;
 }
 
+/*
+This styles the element that contains the actual
+text of an individual post.
+*/
 div.thought {
   border: 2px solid lightgray;
   border-radius: 3px;
