@@ -17,7 +17,7 @@ Thoughts can be installed on an arbitrary number of computers, all updating the 
 
 * Git
 
-*Note: Thoughts should run without modification on any UNIX-adjacent system. Please [open an issue](https://github.com/thwidge/thoughts/issues) if any shell code or coreutil invocations misbehave.*
+> Thoughts should run without modification on any UNIX-adjacent system. Please [open an issue](https://github.com/thwidge/thoughts/issues) if any shell code or coreutil invocations misbehave.
 
 ## How it works
 
