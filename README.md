@@ -1,5 +1,5 @@
 [![Build badge](https://img.shields.io/badge/build-hopeful-green.svg)](https://emojipedia.org/crossed-fingers/) [![Maintained badge](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/thwidge/thoughts/issues) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
-***Bottom line:*** *[Browser-viewable](https://thwidge.github.io/eoijctyoierugoci/) terminal-twitter by self-hosting one file*
+***Bottom line:*** *[A quiet, personal, terminal-twitter by self-hosting one file](https://thwidge.github.io/eoijctyoierugoci/)*
 
 # Thoughts :thought_balloon:
 
