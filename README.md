@@ -7,9 +7,9 @@ Thoughts is a POSIX-compliant shell program for making less-than-a-blog-sized te
 
 Thoughts keeps your thoughts in a self-contained HTML file, and syncs that file in a remote git repository. It's up to you to serve the file from somewhere, but Thoughts handles everything else.
 
-> Thoughts now supports deployment on GitHub Pages out of the box. Simply [enable GitHub Pages](https://pages.github.com/) for your personal thoughts repo, and then post a new thought. You can then view your thoughts page at the URL that GitHub gave you after you enabled Pages.
-
 Thoughts can be installed on an arbitrary number of computers, all updating the same remote HTML file.
+
+Thoughts supports deployment on GitHub Pages out of the box. Simply [enable GitHub Pages](https://pages.github.com/) for your personal thoughts repo, and then post a new thought.
 
 [Here's what the default configuration looks like](https://thwidge.github.io/eoijctyoierugoci/).
 
@@ -58,7 +58,7 @@ Install from anywhere with `./install.sh`
 ## Commands
 
 * `$ thoughts update`
-  * Download and install the latest updates
+  * Download and install the latest version of Thoughts
 * `$ thoughts edit`
   * Edit your previously posted thoughts
 * `$ thoughts style`
