@@ -65,7 +65,7 @@ BEGIN {isCode=0}
                 printf $field" ";
 	    }
 	    field++;
-            # print newline if end of the line
+            # print <br> if end of the line
 	    if (field > NF) {
                 print "<br>";
             }  
