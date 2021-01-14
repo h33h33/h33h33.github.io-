@@ -59,7 +59,7 @@ BEGIN {isCode=0}
         }
         field = 1;
         while (field <= NF) {
-            if ($field ~ /^http:\/\/*/ || $field ~ /^https:\/\/*/) {
+            if ($field ~ /^http:\/\/*/ || $field ~ /^https:\/\/*/ || $field ~ /^gopher:\/\/*/ || $field ~ /^gemini:\/\/*/) {
 	        printf "<a href=\""$field"\">"$field"</a> ";
             } else {
                 printf $field" ";
