@@ -1,7 +1,7 @@
 ```
-##################################################################
-# This is a mirror, this project lives at git.sr.ht/~thwidge now #
-##################################################################
+################################################
+# This project lives at git.sr.ht/~thwidge now #
+################################################
 ```
 
 [![Maintained badge](https://img.shields.io/badge/maintained-yes-green.svg)](mailto:maren@hup.is)  
