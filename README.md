@@ -1,9 +1,3 @@
-```
-################################################
-# This project lives at git.sr.ht/~thwidge now #
-################################################
-```
-
 [![Maintained badge](https://img.shields.io/badge/maintained-yes-green.svg)](mailto:maren@hup.is)  
 
 ***Bottom line:*** *A quiet, personal, terminal-twitter by self-hosting one file*
