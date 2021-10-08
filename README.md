@@ -14,6 +14,8 @@ Thoughts supports deployment on GitHub Pages out of the box. Simply [enable GitH
 
 [Here's what the default configuration looks like](https://thwidge.github.io/eoijctyoierugoci/).
 
+If you want a thoughts page but don't want to manage it yourself, you can do that at https://thoughts.page. *Note: I don't run thoughts.page but I do support and endorse it 👍*
+
 ### Requirements
 
 * Git
